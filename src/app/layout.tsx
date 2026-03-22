@@ -28,17 +28,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${robotoCondensed.variable} ${geistMono.variable} antialiased`}>
-        <main className="relative w-screen h-[100svh] md:h-screen overflow-hidden bg-black">
-          <div
-            className="absolute inset-0 z-0"
-            style={{
-              backgroundImage: "url('/ov_texture.png')",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-              mixBlendMode: "luminosity",
-              opacity: 0.4,
-            }}
-          />
+        <main
+          className="relative w-screen h-[100svh] md:h-screen overflow-hidden"
+          style={{
+            backgroundImage: "url('/ov_texture.png')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundColor: "#000",
+          }}
+        >
           {children}
           <footer className="absolute inset-x-0 bottom-0 z-30 px-4 pb-4">
             <div className="flex flex-col items-center gap-2 md:flex-row md:justify-between">
