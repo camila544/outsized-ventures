@@ -1,0 +1,16 @@
+{
+  "projectId": "prj_tYEqIMNXgKPsVd77RSItOMUDRfCk",
+  "orgId": "team_6LHdcuCx5keHfSXagzNxfE5E",
+  "projectName": "ovvid",
+  "settings": {
+    "createdAt": 1742838178293,
+    "framework": "nextjs",
+    "devCommand": null,
+    "installCommand": null,
+    "buildCommand": null,
+    "outputDirectory": null,
+    "rootDirectory": null,
+    "directoryListing": false,
+    "nodeVersion": "22.x"
+  }
+}
