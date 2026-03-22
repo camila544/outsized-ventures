@@ -16,8 +16,7 @@ export default function Home() {
             duration: 2,
             ease: "easeInOut",
             times: [0, 0.2, 0.5, 0.8, 1],
-            repeat: Infinity,
-            repeatDelay: 1,
+            repeat: 0,
           }}
         >
           <Image src="/star.svg" alt="Star" width={80} height={76} priority />
