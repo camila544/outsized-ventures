@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Roboto_Condensed, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
+
 const robotoCondensed = Roboto_Condensed({
   variable: "--font-roboto-condensed",
   subsets: ["latin"],
@@ -13,10 +14,12 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+
 export const metadata: Metadata = {
   title: "OUTSIZED VENTURES",
   description: "Outsized Ventures is an early stage VC fund based in London that partners with founders pushing the boundaries of science and technology to solve the world's greatest challenges.",
 };
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -27,7 +30,15 @@ export default function RootLayout({
       <body
         className={`${robotoCondensed.variable} ${geistMono.variable} antialiased`}
       >
-        <main className="relative w-screen h-[100svh] md:h-screen overflow-hidden">
+        <main
+          className="relative w-screen h-[100svh] md:h-screen overflow-hidden"
+          style={{
+            backgroundImage: "url('/ov_texture.png')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundColor: "#000",
+          }}
+        >
           {children}
           <footer className="absolute inset-x-0 bottom-0 z-30 px-4 pb-4">
             <div className="flex flex-col items-center gap-2 md:flex-row md:justify-between">
